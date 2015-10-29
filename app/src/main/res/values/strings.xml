@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MemoryMatchGame</string>
+    <string name="app_title">Memory Match</string>
     <string name="action_settings">Settings</string>
 </resources>
