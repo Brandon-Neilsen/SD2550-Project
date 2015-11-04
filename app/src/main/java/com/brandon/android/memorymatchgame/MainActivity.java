@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class gameActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     Button mStart = (Button)findViewById(R.id.start_button);
 
     @Override
@@ -19,7 +19,7 @@ public class gameActivity extends AppCompatActivity {
         mStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(gameActivity.this, TileListActivity.class);
+                Intent i = new Intent(MainActivity.this, TileListActivity.class);
                 startActivity(i);
             }
         });
