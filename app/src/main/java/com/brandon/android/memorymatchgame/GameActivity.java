@@ -1,7 +1,13 @@
 package com.brandon.android.memorymatchgame;
 
-/**
- * Created by Brandon on 11/4/2015.
- */
-public class GameActivity {
-}
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+public class GameActivity extends AppCompatActivity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+
+    }
+}//end GameActivity class

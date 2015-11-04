@@ -29,7 +29,7 @@ public class TileListFragment extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id){
         //Get the Crime from the adapter
         Game g = ((GameAdapter)getListAdapter()).getItem(position);
-        Intent i = new Intent(this, );
+        Intent i = new Intent(getActivity(), GameActivity.class);
     }//end onListItemClick
 
     @Override
