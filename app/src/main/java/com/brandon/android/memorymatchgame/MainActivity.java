@@ -9,13 +9,13 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button mStart = (Button)findViewById(R.id.start_button);
+    Button mStart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mStart = (Button)findViewById(R.id.start_button);
         mStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,14 +23,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-    }
+    }//end onCreate(Bundle)
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_game, menu);
         return true;
-    }
+    }//end onCreateOptionsMenu
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

@@ -23,5 +23,4 @@ public abstract class SingleFragmentActivity extends FragmentActivity {
 
         }
     }//end onCreate(Bundle)
-}
-//end SingleFragmentActivity class
+}//end SingleFragmentActivity class

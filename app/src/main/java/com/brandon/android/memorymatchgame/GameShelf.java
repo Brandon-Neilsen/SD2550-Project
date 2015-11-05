@@ -2,7 +2,6 @@ package com.brandon.android.memorymatchgame;
 
 import android.content.Context;
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class GameShelf {
     private ArrayList<Game> mGames;
@@ -31,13 +30,4 @@ public class GameShelf {
     public ArrayList<Game> getGames(){
         return mGames;
     }//end getGames()
-
-    public Game getGame(UUID id){
-        for (Game g: mGames){
-            if (g.getId().equals(id)){
-                return g;
-            }
-        }
-        return null;
-    }//end getGame(UUID)
 }//end GameShelf class

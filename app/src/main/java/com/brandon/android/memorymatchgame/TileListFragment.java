@@ -27,9 +27,11 @@ public class TileListFragment extends ListFragment {
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id){
-        //Get the Crime from the adapter
+        //Get the Game from the adapter
         Game g = ((GameAdapter)getListAdapter()).getItem(position);
         Intent i = new Intent(getActivity(), GameActivity.class);
+        i.putExtra(Game.EXTRA_SIZE, g.getSize());
+        startActivity(i);
     }//end onListItemClick
 
     @Override
@@ -52,7 +54,7 @@ public class TileListFragment extends ListFragment {
             //Configure the view for this game
             Game g = getItem(position);
             TextView tileTextView = (TextView)convertView.findViewById(R.id.number_of_tiles_listItem);
-            tileTextView.setText(g.getSize() + R.string.choice_title);
+            tileTextView.setText(g.getSize() + " Tiles");
 
             return convertView;
         }//end getView(int, View, ViewGroup)

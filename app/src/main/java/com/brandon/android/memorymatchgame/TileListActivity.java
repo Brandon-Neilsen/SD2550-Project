@@ -4,7 +4,9 @@ import android.support.v4.app.Fragment;
 
 public class TileListActivity extends SingleFragmentActivity {
 
+    @Override
     public Fragment createFragment(){
         return new TileListFragment();
     }//end createFragment()
-}
+
+}//end TileListActivity class

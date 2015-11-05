@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".TileListActivity"
             android:label="Tile Choices"></activity>
+        <activity android:name=".GameActivity"
+            android:label="Game Board"></activity>
     </application>
 
 </manifest>
