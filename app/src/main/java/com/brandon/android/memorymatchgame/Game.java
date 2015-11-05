@@ -11,10 +11,6 @@ public class Game {
         return mSize;
     }//end getSize()
 
-    public String getSizeString(){
-        return mSize + "";
-    }//end getSizeString()
-
     public void setSize(int size){
         mSize = size;
     }//end setSize(int)
