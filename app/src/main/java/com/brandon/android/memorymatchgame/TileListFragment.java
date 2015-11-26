@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 public class TileListFragment extends ListFragment {
@@ -38,6 +40,7 @@ public class TileListFragment extends ListFragment {
     public void onResume(){
         super.onResume();
         ((GameAdapter)getListAdapter()).notifyDataSetChanged();
+        Toast.makeText(getActivity(), "Choose the size of your game board.", Toast.LENGTH_LONG);
     }//end onResume()
 
     private class GameAdapter extends ArrayAdapter<Game> {

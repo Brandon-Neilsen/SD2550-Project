@@ -10,7 +10,7 @@ public class GameShelf {
 
     private GameShelf(Context appContext) {
         mAppContext = appContext;
-        mGames = new ArrayList<Game>();
+        mGames = new ArrayList<>();
 
         for (int i = 4; i <= 20; i = i + 2) {
             Game g = new Game();
